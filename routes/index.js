@@ -1,22 +1,10 @@
-/**
- * @description Importation of the reqired packages
- */
-
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 require("dotenv").config();
 
-/**
- * @description Importation of the reqired models
- */
-
 const Contact = require("../models/Contact");
 const User = require("../models/User");
-
-/**
- * @description Importation of the reqired middlewares
- */
 
 const { verifyToken } = require("../middlewares/verifyToken");
 
